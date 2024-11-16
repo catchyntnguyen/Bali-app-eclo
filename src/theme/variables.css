@@ -1,0 +1,316 @@
+/* For information on how to create your own theme, please see:
+   http://ionicframework.com/docs/theming/ */
+
+   @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+   /* Set variables for all modes */
+   :root {
+	   /* Set the background of the entire app */
+	   --ion-background-color: #ffffff;  
+	   /* 3 màu chính dụng ở đây */
+	   --ion-color-primary: #000000;
+	   --ion-color-secondary: #703EFF;
+	   --ion-color-tertiary: #FDBB0F;
+	   /* mấy màu phụ cơ bản */
+	   --ion-color-success: #00E6B3;
+	   --ion-color-warning: #FFC107;
+	   --ion-color-danger: #F10000;
+	   --ion-color-light: #f6f8fc;
+	   --ion-color-medium: #F3F2F6;
+	   --ion-color-dark: #2f2f2f;
+	   --ion-font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+   }
+
+/* Set text color of the entire app for iOS only */
+:root.ios {
+    --ion-text-color: #000;
+}
+
+/* Set text color of the entire app for Material Design only */
+:root.md {
+    --ion-text-color: #222;
+}
+
+/* Customize padding for ion-col components globally */
+ion-col {
+    padding: 0;
+}
+ion-grid{
+    padding: 0;
+}
+
+.tabbar{
+	border-top: 1px solid black;
+}
+.header{
+	position: fixed;
+	height: 56px;
+	width: 100%;
+	background-color: black;
+}
+.header2{
+	position: fixed;
+	height: 84px;
+	width: 100%;
+	background-color: black;
+}
+.content{
+	padding: 66px 10px 0 10px;
+}
+.box-location{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 139px;
+	width: 100%;
+	background-color: black;
+	border-radius:5px;
+	color: white;
+	padding:10px;
+}
+.box-l-user{
+	height:40px;
+	width:40px;
+	border-radius:5px;
+}
+.box-l-user img{
+	header: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.box-location-header{
+	display:flex;
+	justify-content: space-between;
+}
+.box-l-text{
+	font-weight:light;
+}
+.box-location-next{
+	display:flex;
+	justify-content: start;
+	item-align: center;
+	gap:4px;
+}
+
+.box-location-search{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 35px;
+	gap:8px;
+}
+.box-location-search input{
+	color: black;
+	outline: none;
+	border: none;
+	width:90%;
+	height:100%;
+	border-radius:5px;
+	background-color: #ffff;
+	padding-left: 30px;
+	font-size:12px;
+}
+.bell{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffff;
+	height:100%;
+	width: 35px;
+	border-radius:5px;
+}
+.icon-search{
+	position:absolute;
+}
+.icon-search svg{
+	position:relative;
+	left: 10px;
+	top: 2px;
+}
+.img-item-car{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:40px;
+	width:40px;
+	border-radius:10px;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+.n-i-car-title{
+	font-size: 10px;
+}
+.nav-item-car{
+	width:62px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	font-weight:bold;
+	gap:5px;
+	
+}
+.service-car{
+	display:flex;
+	gap:5px;
+	margin:10px 0;
+	justify-content: center;
+	align-item:center;
+}
+.img-item-extra{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+.n-i-extra-title{
+	font-size: 10px;
+}
+.nav-item-extra{
+	width:62px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	font-weight:bold;
+	gap:5px;
+}
+.service-extra{
+	display:flex;
+	gap:10px;
+	justify-content: center;
+	align-item:center;
+}
+.header-listcart{
+	display:flex;
+	justify-content: space-between;
+	aline-items:center;
+}
+.h-listcart-left{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap:10px;
+}
+.cartCar-left{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items:start;
+}
+.cartCar-left-img{
+	width:84px;
+}
+.cartCar-middle-header{
+	font-size:16px;
+	text-align:center;
+	margin-bottom:5px;
+}
+.cartCar-middle-content{
+	display:flex;
+	flex-direction:column;
+}
+.cartCar-middle-content>div{
+	display:flex;
+	gap:5px;
+}
+.cartCar{
+	height: 98px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.cartCar-middle-item p{
+	margin:5px;
+	width:60px;
+	font-size: 10px;
+}
+.cartCar-middle-item{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:9px;
+}
+.button{
+	border-radius:5px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:white;
+}
+.cartCar-right{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:end;
+	height: 21px;
+	width: 80px;
+	gap:5px;
+}
+.cartCar-right p {
+	font-size:8px;
+	margin:0;
+}
+.cartCar-right button{
+	padding:10px 0;
+	width:80px;
+	background-color:black;
+}
+.buttonMore{
+	width:100%;
+	padding:10px;
+	background-color:black;
+}
+.card-container {
+	display: flex;
+	justify-content:space-around;
+	gap: 10px; 
+  }
+
+  .card {
+	width: 166px;
+	height: 212px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	padding:10px 0 10px;
+  }
+
+  .card img {
+	width: 100%;
+	height: auto;
+  }
+
+  .card-content {
+	padding: 10px;
+  }
+
+  .card-content h4 {
+	font-size: 14px;
+	margin: 0;
+  }
+
+  .card-content p {
+	font-size: 12px;
+	color: #ccc;
+  }
+  .box-new{
+	padding-bottom: 10px;
+  }
+  .header2 button{
+	background: transparent;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap:16px;
+	margin-left:10px;
+  }
+  .header2{
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+
+  }
