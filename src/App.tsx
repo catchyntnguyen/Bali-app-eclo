@@ -21,6 +21,7 @@ import Activite from './pages/activite/page';
 // import Register from './pages/register/page';
 import User from './pages/user/page';
 import Payment from './pages/payment/page';
+import BoxChat from './pages/chat/chatbox/page';
 
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -60,6 +61,9 @@ const App: React.FC = () => {
               </Route>
               <Route exact path="/chat">
                 <Chat />
+              </Route>
+              <Route exact path="/chat/boxchat">
+                <BoxChat />
               </Route>
               <Route exact path="/user">
                 <User />

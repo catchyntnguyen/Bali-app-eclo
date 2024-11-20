@@ -123,9 +123,9 @@ const Page: React.FC = () => {
                 </div>
                 <div className='box-listcart'>
                   <div className='header-listcart'>
-                    <h4>Car</h4>
+                    <h5>Car</h5>
                     <div className='h-listcart-left'>
-                      <h4>SUVs</h4>
+                      <h5>SUVs</h5>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 16L19.2929 12.7071C19.6834 12.3166 19.6834 11.6834 19.2929 11.2929L16 8M19 12L5 12" stroke="#090909" stroke-width="1.5" stroke-linecap="round" />
                       </svg>
@@ -152,9 +152,9 @@ const Page: React.FC = () => {
                     />
                   </div>
                 </div>
-                <div className='box-new'>
+                {/* <div className='box-new'>
                   <div className='header-listcart'>
-                    <h4>New</h4>
+                    <h5>New</h5>
                     <div className='h-listcart-left'>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 16L19.2929 12.7071C19.6834 12.3166 19.6834 11.6834 19.2929 11.2929L16 8M19 12L5 12" stroke="#090909" stroke-width="1.5" stroke-linecap="round" />
@@ -166,7 +166,7 @@ const Page: React.FC = () => {
                     <div className="card">
                       <img src="/new.png" alt="Motorbike Image" />
                       <div className="card-content">
-                        <h4>Bích Câu | 21/10/2024 21:16</h4>
+                        <h5>Bích Câu | 21/10/2024 21:16</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ...</p>
                       </div>
                     </div>
@@ -174,12 +174,12 @@ const Page: React.FC = () => {
                     <div className="card">
                       <img src="/new.png" alt="Motorbike Image" />
                       <div className="card-content">
-                        <h4>Bích Câu | 21/10/2024 21:16</h4>
+                        <h5>Bích Câu | 21/10/2024 21:16</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ...</p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </IonCol>
           </IonRow>

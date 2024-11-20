@@ -33,9 +33,12 @@ const Page: React.FC = () => {
           <IonRow className="ion-justify-content-center ">
             <IonCol sizeSm="12" sizeMd="8" sizeLg="6" sizeXl="6">
               <Headers2
-              title='Activity'
+                title='Activity'
+                className=''
               />
-              <BoxActiviteCar/>
+              <div className='content2'>
+                <BoxActiviteCar />
+              </div>
             </IonCol>
           </IonRow>
         </IonGrid>
