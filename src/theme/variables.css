@@ -779,3 +779,244 @@ ion-grid{
 .rate-box-chat{
 	text-align:center;
 }
+.headerUser{
+	height:148px;
+	width:100%;
+	background-color:black;
+	display:flex;
+	justify-content:space-between;
+	padding:0 36px;
+	align-items:center;
+}
+.headerUser-info{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	gap:10px;
+}
+.headerUser-info-img{
+	height:40px;
+	width:40px;
+	border-radius:100%;
+}
+.headerUser-info-img img{
+	width:100%;
+	height:100%;
+	border-radius:100%;
+}
+.member-rate>div{
+	position:relative;
+	top:75px;
+	width:341px;
+	height:44px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:white;
+	padding:0 35px;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.member-rate{
+	position:absolute;
+	
+}
+.member_start{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.containeruser {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+  }
+  
+  .section {
+	margin-bottom: 20px;
+  }
+  
+  h3 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .item, .sub-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	/* border-bottom: 1px solid #ddd; */
+  }
+  
+  .sub-item {
+	padding-left: 20px;
+	border-bottom: none;
+  }
+  
+  .item:last-child {
+	border-bottom: none;
+  }
+  
+  span {
+	font-size: 1rem;
+	color: #555;
+  }
+  
+.strawberries{
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.user-page {
+	padding: 16px;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+  }
+  
+  .user-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .user-close-btn, .user-save-btn {
+	border: none;
+	background: none;
+	font-size: 18px;
+	cursor: pointer;
+  }
+  
+  .user-avatar-section {
+	text-align: center;
+	margin: 16px 0;
+  }
+  
+  .user-avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+  }
+  
+  .user-rating {
+	margin-top: 8px;
+	font-size: 16px;
+  }
+  
+  .user-form, .user-language-options, .user-payment-form {
+	margin-top: 16px;
+  }
+  
+  .user-label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+  }
+  
+  .user-input, .user-select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+  }
+  
+  .user-mobile {
+	display: flex;
+	align-items: center;
+  }
+  
+  .user-country-code {
+	margin-right: 8px;
+  }
+  
+  .user-logout-btn {
+	width: 100%;
+	padding: 12px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background:transparent;
+	color: black;
+	border-bottom: 1px solid gray;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap:5px;
+  }
+  
+  .user-language-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+  }
+  
+  .user-language-option input {
+	margin-right: 8px;
+  }
+  
+  .user-payment-option, .user-save-card {
+	margin-bottom: 16px;
+  }
+  
+  .user-card-details input{
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid gray;
+  }
+  .user-card-details {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top:7px;
+
+  }
+  .user-card-details-under {
+	display: flex;
+	gap: 8px;
+  }
+  
+  .user-payment-info {
+	font-size: 12px;
+	color: #555;
+  }
+  .user-header button{
+	color: black;
+  }
+  .user-form input{
+	background-color: white;
+	border:none;
+	border-bottom:1px solid gray;
+  }
+  .user-form select{
+	background-color: white;
+  }
+  .genderdropdown{
+	padding:10px 0;
+	border-bottom:1px solid gray;
+  }
+  .genderdropdown-options>div{
+	padding:10px 0;
+	border-bottom:1px solid gray;
+  }
+  .text-member{
+	color: black;
+  }
+  .itemLanguage{
+	display:flex;
+	padding:10px;
+	border-radius:5px;
+	margin:10px 0;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }

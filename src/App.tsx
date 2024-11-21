@@ -20,6 +20,10 @@ import Activite from './pages/activite/page';
 // import Login from './pages/login/page';
 // import Register from './pages/register/page';
 import User from './pages/user/page';
+import Profile from './pages/user/profile/page';
+import Language from './pages/user/language/page';
+import UserPayment from './pages/user/payment/page';
+
 import Payment from './pages/payment/page';
 import BoxChat from './pages/chat/chatbox/page';
 
@@ -67,6 +71,15 @@ const App: React.FC = () => {
               </Route>
               <Route exact path="/user">
                 <User />
+              </Route>  
+              <Route exact path="/user/profile">
+                <Profile />
+              </Route>
+              <Route exact path="/user/language">
+                <Language />
+              </Route>
+              <Route exact path="/user/payment">
+                <UserPayment />
               </Route>
               <Route exact path="/">
                 <Redirect to="/home" />
