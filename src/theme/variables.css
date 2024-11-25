@@ -53,9 +53,10 @@ ion-grid{
 	height: 84px;
 	width: 100%;
 	background-color: black;
+	z-index:20;
 }
 .content{
-	padding: 66px 10px 0 10px;
+	padding: 57px 10px 0 10px;
 }
 .content4{
 	padding-top: 66px ;
@@ -175,8 +176,23 @@ ion-grid{
 	border-radius:100%;
 	background-color:rgba(0, 0, 0, 0.2);
 }
+.img-item-car{
+	/* display:flex;
+	justify-content: center;
+	align-items: center; */
+	margin:auto;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	background-color:rgba(0, 0, 0, 0.2);
+}
 .n-i-extra-title{
 	font-size: 10px;
+}
+.n-i-brand-title{
+	font-size: 10px;
+	text-align:center;
+	font-weight:bold;
 }
 .nav-item-extra{
 	width:62px;
@@ -313,11 +329,19 @@ ion-grid{
 	padding-bottom: 10px;
   }
   .header2{
-	position: fixed;
-	height: 84px;
-	width: 100%;
-	background-color: black;
-}
+	  position: fixed;
+	  display:;
+	  justify-content: space-between;
+	  width: 100%;
+	  height: 84px;
+	  background-color: black;
+	  /* z-index:10; */
+	}
+	.header2>div{
+		display:flex;
+		justify-content: space-between;
+		width:96.3%;
+	}
   .header2 button{
 	background: transparent;
 	display:flex;
@@ -326,6 +350,11 @@ ion-grid{
 	gap:16px;
 	margin-left:10px;
 	font-size:18px;
+  }
+  .header2 .btn2{
+	background:rgba(255, 255, 255, 0.1);
+	padding:5px;
+	border-radius:100%;
   }
   .header2{
 	display:flex;
@@ -1020,3 +1049,685 @@ ion-grid{
 	margin:10px 0;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   }
+  .notification{
+	 width:100%;
+	 display:flex;
+	 justify-content: center;
+	}
+	.notification>div{
+		position: absolute;
+		top: -650px;
+		background-color:white;
+		border-radius:5px;
+		border:1px solid gray;
+		padding: 10px;
+		width: 95%;
+		display: flex;
+		flex-direction:column;
+		gap:25px;
+	}
+	.notification-content>div{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		gap:10px;
+	}
+	
+  .circleNotification{
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	background-color:gray;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  }
+  .circleNotification-text{
+	width:80%;
+  }
+  .circleNotification-text .title{
+	color:black;
+	weight:bold;
+  }
+  .circleNotification-text .description{
+	color:gray;
+	weight:bold;
+	font-size:10px;
+  }
+  .n-Red{
+	background-color:rgba(241, 0, 0, 0.1);
+}
+ 	.n-green{
+			background-color:rgba(0, 230, 179, 0.1);
+	}
+	.n-green-car{
+		background-color:rgba(0, 230, 179, 0.2);
+	}
+	.n-yellow-car{
+		background-color:rgba(230, 180, 0, 0.2);
+	}
+	.n-red-car{
+		background-color:rgba(255, 61, 0, 0.2);
+	}
+	.n-purple{
+		background-color:rgba(131, 66, 186, 0.7);
+	}
+	.inputSearch{
+		position:fixed;
+		top:70px;
+		z-index:20;
+	}
+	.inputSearch>div{
+		display:flex;
+		gap:10px;
+	}
+	.inputSearch-left-icon{
+		position:absolute;
+		margin-top:8px;
+		margin-left:5px
+	}
+	.inputSearch-left input{
+		border:none;
+		outline:none;
+		background:white;
+		width:292px;
+		height:35px;
+		border-radius:10px;
+		padding:0 30px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	.inputSearch-right{
+		height:35px;
+		width:35px;
+		background:white;
+		border-radius:10px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	.contentSearch{
+		margin-top:120px;
+		padding:0 10px;
+	}
+	.parentinputSearch{
+		width:100%;
+		display:flex;
+		justify-content:center;
+		z-index:1;
+	}
+	.nav-item-car-slider>div{
+		/* display:flex;
+		flex-direction:column;
+		justify-content:center; */
+		margin:auto;
+	}
+	.nav-item-brand{
+		z-index:10;
+	}
+	/* detail car */
+	.specifications>div{
+		display:flex;
+		margin:17px 0;
+		justify-content:space-between;
+	}
+	.specifications{
+		padding:10px;
+		border-radius:10px;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+		margin:10px 0;
+	}
+	.item-specifications-end{
+		display:flex;
+		justify-content:end;
+		align-items:center;
+		gap:10px;
+	}
+	.item-specifications{
+		display:flex;
+		align-items:center;
+		gap:10px;
+	}
+	.specifications2{
+		display:flex;
+		flex-direction:column;
+		gap:15px;
+		padding:10px;
+	}
+	.specifications2-on{
+		display:flex;
+		
+	}
+	.specifications2-on-box{
+		display:flex;
+		flex-direction:column;
+		gap:15px;
+	}
+	.specifications2-under{
+		display:flex;
+		flex-direction:column;
+		gap:15px;
+	}
+	.specifications2-on>div{
+		width:50%;
+	}
+	.booking-detail{
+		background:black;
+		font-weight:bold;
+		font-size:16px;
+		width:90%;
+		height:54px;
+		border-radius:5px;
+		margin:auto;
+		margin-top:50px;
+	}
+	.bill-detailcar-first{
+		display:flex;
+		justify-content:space-between;
+	}
+	.bill-detailcar-first img{
+		width:100%;
+	}
+	.bill-detailcar-specifications{
+		width:60%;
+	}
+	.bill-detailcar-first-img{
+		width:40%;
+	}
+	.bill-detailcar-specifications {
+		font-size:11px;
+	}
+	.formDate{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.detail-booking-from{
+		width:90%;
+		margin:auto;
+		height:105px;
+		display:flex;
+		align-items:start;
+		justify-content:space-between;
+	}
+	.icon-secondary{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		height:100%;
+		gap:20px;
+		width:45%;
+	}
+	.icon-last{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		height:100%;
+		gap:20px;
+		color:#FF3D00;
+	}
+	.icon-last-end{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		height:100%;
+		gap:20px;
+		color:#00E6B3;
+	}
+	.icon-last-end, .icon-last{
+		width:45px;
+	}
+	.map-detail-booking{
+		height:43px;
+		background-color:rgba(164, 164, 164, 0.5);
+		border-radius:10px;
+		width:100%;
+	}
+	.detail-booking{
+		display:flex;
+		flex-direction:column;
+		gap:10px;
+	}
+	.map-detail-booking {
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		padding:0 10px;
+	}
+	.billContainer {
+		width: 100%;
+		max-width: 480px;
+		margin: 0 auto;
+		background: #fff;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  }
+	  
+	  .billheader {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 15px;
+		background: #fff;
+		border-bottom: 1px solid #eaeaea;
+	  }
+	  
+	  .billheader span {
+		font-size: 16px;
+		font-weight: bold;
+	  }
+	  
+	  .required {
+		color: red;
+	  }
+	  
+	  .close-btn {
+		background: none;
+		border: none;
+		font-size: 20px;
+		cursor: pointer;
+	  }
+	  
+	  .service-section {
+		padding: 15px;
+		border-bottom: 1px solid #eaeaea;
+	  }
+	  
+	  .Billservice-item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	  }
+	  .imgchainuoc{
+		height: 100px;
+		width: 50px;
+	  }
+	  .Billservice-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+	  }
+	  
+	  .service-details {
+		flex: 1;
+	  }
+	  
+	  .service-details h3 {
+		margin: 0;
+		font-size: 16px;
+	  }
+	  
+	  .service-details p {
+		margin: 5px 0;
+		font-size: 14px;
+		color: #666;
+	  }
+	  
+	  .quantity-control {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	  }
+	  
+	  .quantity-control button {
+		width: 30px;
+		height: 30px;
+		background: #f0f0f0;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		color: black;
+	  }
+	  
+	  .service-info, .payment-section, .contact-info {
+		border-bottom: 1px solid #eaeaea;
+	  }
+	  
+	  .service-info h4, .contact-info h4 {
+		margin: 0 0 10px;
+		font-size: 16px;
+	  }
+	  
+	  .service-info p, .payment-section label, .contact-info label {
+		font-size: 14px;
+		margin: 5px 0;
+	  }
+	  
+	  .service-info span {
+		float: right;
+	  }
+	  
+	  .payment-option {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		padding: 10px;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+	  }
+	  
+	  .payment-option img {
+		width: 30px;
+	  }
+	  
+	  .phone-input {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	  }
+	  
+	  .phone-input span {
+		background: #f0f0f0;
+		padding: 5px;
+		border-radius: 5px;
+	  }
+	  
+	  .continue-btn {
+		display: block;
+		width: 100%;
+		padding: 15px;
+		background: black;
+		color: white;
+		font-size: 16px;
+		text-align: center;
+		border: none;
+		cursor: pointer;
+		border-radius:10px;
+		margin:10px 0;
+	  }
+	  .remove-btn{
+		background:transparent;
+		color:black;
+	  }
+	  .extraservice{
+		border:1px solid black;
+		border-radius:100%;
+		height:30px;
+		width:30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	.momo{
+		display: flex;
+		justify-content: center;
+		align-items:center;	
+	}
+	.inputnumber{
+		width: 20%;
+		border-radius: 10px;
+		border: 1px solid gray;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		gap:10px;
+		margin-bottom: 0px !important;
+	}
+	.contact-info label{
+		color:gray;
+	}
+	.contact-info input{
+		margin-bottom: 0px !important;
+	}
+	.hidden{
+		display: none !important;
+	}
+	.contentLR {
+		height: 100vh;
+		background-image: url('/bglogin.png');
+		background-repeat: no-repeat;
+		background-size: cover; 
+		background-position: center; 
+	}
+	.login-container {
+		text-align: center;
+		width: 300px;
+		color:white;
+	  }
+	.login-container h1{
+		color:white;
+		font-size:40px;
+		margin-bottom:50px;
+	}
+	  
+	  .login-form {
+		display: flex;
+		flex-direction: column;
+	  }
+	  
+	  .input-group {
+		position: relative;
+		margin-bottom: 15px;
+	  }
+	  
+	  .input-group label img {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		width: 20px;
+		height: 20px;
+	  }
+	  
+	  .input-group input {
+		width: 100%;
+		height:55px;
+		padding: 10px 10px 10px 40px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		color: #000;
+		background-image: url('/bg-blur.png');
+		background-repeat: no-repeat;
+		background-size: cover; 
+		color:white;
+		outline: none;
+	  }
+	  
+	  .forgot-password {
+		font-size: 12px;
+		margin-bottom: 15px;
+		color: #ccc;
+		text-decoration: none;
+	  }
+	  
+	  .forgot-password:hover {
+		text-decoration: underline;
+	  }
+	  
+	  .sign-in-btn {
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		background: linear-gradient(to right, #444, #222);
+		color: #fff;
+		cursor: pointer;
+		font-size: 16px;
+	  }
+	  
+	  .sign-in-btn:hover {
+		background: linear-gradient(to right, #666, #333);
+	  }
+	  
+	  .social-login {
+		margin-top: 20px;
+	  }
+	  
+	  .social-login p {
+		font-size: 14px;
+		margin-bottom: 10px;
+	  }
+	  
+	  .social-icons {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+	  }
+	  
+	  .social-icons>div>div  {
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .social-icons img {
+		width:100%;
+		height:100%;
+	  }
+	  
+	  .social-icons img:hover {
+		opacity: 0.8;
+	  }
+	  .social-icons>div{
+		margin:0 10px;
+	  }
+	  .contentLR>div{
+		height: 100%;
+		display:flex ;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .login-form button{
+		height: 50px;
+	  }
+	  .social-icons>div{
+		width: 60px;
+		height: 44px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		background-image: url('/bg-blur.png');
+		background-repeat: no-repeat;
+		background-size: cover; 
+		border-radius:10px;
+		background-position: center; 
+	}
+	.iconfb, .icona{
+		position: relative;
+		top:2px;
+	}
+	.icong{
+		width: 25.5px !important;
+		height: 25.5px !important;
+	}
+	.hrStick{
+		display:flex;
+		justify-content: center;
+		align-items:center;
+	}
+		.labelOut{
+		margin-top:0 !important;
+		text-align: start;
+
+	}
+	.toggle-password-btn{
+		position: absolute;
+		background:transparent;
+		right: 10px;
+		top: 3px;
+	}
+	.underMap{
+		height: 9vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.underMap button{
+		width: 349px;
+		height: 61px;
+		color:white;
+		background:black;
+		border-radius:10px;
+	}
+	.penUser{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap:10px;
+	}
+.success-container {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Logo */
+.success-logo{
+	display: flex;
+	justify-content: center;
+}
+.success-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Status */
+.success-status {
+	text-align: center;
+    font-size: 24px;
+    color: #1dc078;
+    margin: 10px 0;
+}
+
+/* Confirmation */
+.success-confirmation {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+/* Note Section */
+.success-note {
+    text-align: left;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.success-note p {
+    margin: 0 0 5px;
+}
+
+.success-note ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.success-note li {
+    margin-bottom: 10px;
+}
+
+/* Button */
+.success-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+	height: 61px;
+}
+
+.success-button:hover {
+    background-color: #333333;
+}
+.success-container-parent{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}

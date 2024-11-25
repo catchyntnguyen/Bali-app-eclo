@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const CustomButton: React.FC<ButtonProps> = ({ title, icon, className = '' }) => {
     return (
-        <button className={`button ${className}`}>
+        <button className={`button ${className}`} onClick={() => window.location.href = '/carfleet'}>
             {title}
             {icon} 
         </button>

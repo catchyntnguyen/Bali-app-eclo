@@ -25,6 +25,7 @@ const SliderCar: React.FC<SliderCar> = ({ data }) => {
                         <img src={item.imageUrl} alt={item.altText} />
                     </div>
                 ))}
+                
             </Slider>
         </div>
     );

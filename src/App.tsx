@@ -13,19 +13,29 @@ import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import { RootState } from './redux/store';
 import dataIcon from './components/dataIcon';
+import 'leaflet/dist/leaflet.css';
+
 
 import Home from './pages/home/page';
 import Chat from './pages/chat/page';
 import Activite from './pages/activite/page';
-// import Login from './pages/login/page';
-// import Register from './pages/register/page';
+import Login from './pages/login/page';
+import Register from './pages/register/page';
 import User from './pages/user/page';
 import Profile from './pages/user/profile/page';
 import Language from './pages/user/language/page';
 import UserPayment from './pages/user/payment/page';
+import PickUpPage from './pages/PickUpPage/page';
+import DestinationPage from './pages/destination/page';
+import RoutePage from './pages/route/page';
+import Success from './pages/success/page';
 
 import Payment from './pages/payment/page';
 import BoxChat from './pages/chat/chatbox/page';
+import Wishlist from './pages/wishlist/page';
+import Carfleet from './pages/carfleet/page';
+import DetailCar from './pages/detailcar/page';
+import Billbooking from './pages/billbooking/page';
 
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -55,7 +65,15 @@ const App: React.FC = () => {
           <IonTabs>
             <IonRouterOutlet>
               <Route exact path="/home">
-                <Home />
+                <Home onIntroSeen={function (seen: boolean): void {
+                  throw new Error('Function not implemented.');
+                } } />
+              </Route>
+              <Route exact path="/login">
+                <Login />
+              </Route>
+              <Route exact path="/register">
+                <Register />
               </Route>
               <Route exact path="/activite">
                 <Activite />
@@ -66,12 +84,24 @@ const App: React.FC = () => {
               <Route exact path="/chat">
                 <Chat />
               </Route>
+              <Route exact path="/pickppage">
+                <PickUpPage />
+              </Route>
+              <Route exact path="/destination">
+                <DestinationPage />
+              </Route>
+              <Route exact path="/route">
+                <RoutePage />
+              </Route>
+              <Route exact path="/success">
+                <Success />
+              </Route>
               <Route exact path="/chat/boxchat">
                 <BoxChat />
               </Route>
               <Route exact path="/user">
                 <User />
-              </Route>  
+              </Route>
               <Route exact path="/user/profile">
                 <Profile />
               </Route>
@@ -81,9 +111,22 @@ const App: React.FC = () => {
               <Route exact path="/user/payment">
                 <UserPayment />
               </Route>
+              <Route exact path="/wishlist">
+                <Wishlist />
+              </Route>
+              <Route exact path="/carfleet">
+                <Carfleet />
+              </Route>
+              <Route exact path="/detailCar/:slug">
+                <DetailCar />
+              </Route>
+              <Route exact path="/billbooking">
+                <Billbooking />
+              </Route>
               <Route exact path="/">
                 <Redirect to="/home" />
               </Route>
+
             </IonRouterOutlet>
 
             <IonTabBar slot="bottom" className='tabbar'>

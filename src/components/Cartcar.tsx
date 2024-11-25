@@ -48,9 +48,9 @@ const Cartcar: React.FC<NavServiceProps> = ({
                     </div>
                 </div>
             </div>
-            {/* <div className='cartCar-right'>
-                <button className='button'>View deal</button>
-            </div> */}
+            <div className='cartCar-right'>
+                <button className='button' onClick={() => window.location.href = '/detailCar/1'}>View deal</button>
+            </div>
         </div>
     );
 };

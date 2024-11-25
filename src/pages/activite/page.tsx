@@ -35,6 +35,7 @@ const Page: React.FC = () => {
               <Headers2
                 title='Activity'
                 className=''
+                icon={''}
               />
               <div className='content2'>
                 <BoxActiviteCar />

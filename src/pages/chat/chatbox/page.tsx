@@ -36,6 +36,7 @@ const Page: React.FC = () => {
                         <IonCol sizeSm="12" sizeMd="8" sizeLg="6" sizeXl="6">
                             <Headers2
                                 title='Chat' className={''}
+                                icon=''
                             />
                             <div className="content4">
                                 <div className='boxchatin'>
