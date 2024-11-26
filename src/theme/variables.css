@@ -415,6 +415,9 @@ ion-grid{
   .b-activity-car-third{
 	height: 44px;
   }
+  .b-activity-car-third-car{
+	height: 200px;
+  }
   .b-activity-car-third img {
 	height: 100%;
 	width: 100%;
@@ -1737,3 +1740,52 @@ ion-grid{
 	justify-content: center;
 	height: 100vh;
 }
+.content4 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+  }
+  
+  .boxchatin {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overflow: hidden;
+  }
+  
+  .box_chat {
+	flex-grow: 1;
+	overflow-y: auto; /* Cho phép cuộn nội dung */
+	padding: 10px; /* Khoảng cách cho nội dung */
+  }
+  
+  .ion-no-border {
+	position: sticky;
+	bottom: 0;
+	background-color: white; /* Đặt màu nền để nhìn rõ */
+	z-index: 10; /* Đảm bảo luôn ở trên */
+  }
+  .ion-datetime-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000; /* Ensure it's above other content */
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	width: 90%; /* Adjust width as needed */
+	max-width: 400px; /* Optional for larger screens */
+  }
+  
+  .ion-datetime-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+	z-index: 999; /* Ensure it covers everything except the popup */
+  }
+  

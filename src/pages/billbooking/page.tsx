@@ -271,22 +271,28 @@ const Page: React.FC = () => {
                       </div>
                     </div>
                     {showStartDatePickerStart && (
-                      <IonItem>
-                        <IonDatetime
-                          value={startDate}
-                          onIonChange={(e: any) => valueDateStart(e)}
-                          onBlur={() => setShowStartDatePickerStart(false)}
-                        />
-                      </IonItem>
+                      <>
+                        <div className="ion-datetime-overlay" onClick={() => setShowStartDatePickerStart(false)}></div>
+                        <div className="ion-datetime-popup">
+                          <IonDatetime
+                            value={startDate}
+                            onIonChange={(e: any) => valueDateStart(e)}
+                            onBlur={() => setShowStartDatePickerStart(false)}
+                          />
+                        </div>
+                      </>
                     )}
                     {showStartDatePickerEnd && (
-                      <IonItem>
-                        <IonDatetime
-                          value={startDate}
-                          onIonChange={(e: any) => valueDateEnd(e)}
-                          onBlur={() => setShowStartDatePickerEnd(false)}
-                        />
-                      </IonItem>
+                      <>
+                        <div className="ion-datetime-overlay" onClick={() => setShowStartDatePickerStart(false)}></div>
+                        <div className="ion-datetime-popup">
+                          <IonDatetime
+                            value={startDate}
+                            onIonChange={(e: any) => valueDateEnd(e)}
+                            onBlur={() => setShowStartDatePickerEnd(false)}
+                          />
+                        </div>
+                      </>
                     )}
                   </div>
                 </div>
@@ -392,7 +398,7 @@ const Page: React.FC = () => {
                       </div>
                     </form>
                   </div>
-                  <button className="continue-btn"  onClick={() => window.location.href = '/success'}>Continue »</button>
+                  <button className="continue-btn" onClick={() => window.location.href = '/success'}>Continue »</button>
                 </div>
               </div>
             </IonCol>

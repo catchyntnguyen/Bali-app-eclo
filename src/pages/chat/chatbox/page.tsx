@@ -39,7 +39,7 @@ const Page: React.FC = () => {
                                 icon=''
                             />
                             <div className="content4">
-                                <div className='boxchatin'>
+                                <div className="boxchatin">
                                     <div className="box_header">
                                         <div className='box_item-driver'>
                                             <div className='box_item-driver-left'>
@@ -60,50 +60,82 @@ const Page: React.FC = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='box_chat'>
-                                        <div className='box-chat-driver'>
-                                            <div className='box_chat-content'>
-                                                Hi, I'm your driver
-                                            </div>
-                                            <div className='box_chat-time'>
-                                                2 : 30
-                                            </div>
+                                    <div className="box_chat">
+                                        <div className="box-chat-driver">
+                                            <div className="box_chat-content">Hi, I'm your driver</div>
+                                            <div className="box_chat-time">2 : 30</div>
                                         </div>
-                                        <div className='box-chat-me'>
-                                            <div className='box_chat-content'>
+                                        <div className="box-chat-me">
+                                            <div className="box_chat-content">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempora, mollitia excepturi reprehenderit error
                                             </div>
-                                                                                       <div className='box_chat-time'>
-                                                2 : 31
+                                            <div className="box_chat-time">2 : 31</div>
+                                        </div>
+                                        <div className="box-chat-driver">
+                                            <div className="box_chat-content">Hi, I'm your driver</div>
+                                            <div className="box_chat-time">2 : 30</div>
+                                        </div>
+                                        <div className="box-chat-me">
+                                            <div className="box_chat-content">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempora, mollitia excepturi reprehenderit error
                                             </div>
+                                            <div className="box_chat-time">2 : 31</div>
+                                        </div>
+                                        <div className="box-chat-driver">
+                                            <div className="box_chat-content">Hi, I'm your driver</div>
+                                            <div className="box_chat-time">2 : 30</div>
+                                        </div>
+                                        <div className="box-chat-me">
+                                            <div className="box_chat-content">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempora, mollitia excepturi reprehenderit error
+                                            </div>
+                                            <div className="box_chat-time">2 : 31</div>
+                                        </div>
+                                        <div className="box-chat-driver">
+                                            <div className="box_chat-content">Hi, I'm your driver</div>
+                                            <div className="box_chat-time">2 : 30</div>
+                                        </div>
+                                        <div className="box-chat-me">
+                                            <div className="box_chat-content">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum tempora, mollitia excepturi reprehenderit error
+                                            </div>
+                                            <div className="box_chat-time">2 : 31</div>
                                         </div>
                                     </div>
-                                    <div className='box_input-send'>
-                                        <IonRow className='btn-send'>
-                                            <button className='btns-send'>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20 5H16.83L15 3H9L7.17 5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5ZM20 19H4V7H8.05L9.88 5H14.12L15.95 7H20V19ZM12 8C9.24 8 7 10.24 7 13C7 15.76 9.24 18 12 18C14.76 18 17 15.76 17 13C17 10.24 14.76 8 12 8ZM12 16C10.35 16 9 14.65 9 13C9 11.35 10.35 10 12 10C13.65 10 15 11.35 15 13C15 14.65 13.65 16 12 16Z" fill="black" />
-                                                </svg>
-                                            </button>
-                                        </IonRow>
-                                        <IonRow className='input-send'>
-                                            <IonInput
-                                                placeholder="Ask something"
-                                                className="inputText-handle"
-                                            />
-                                        </IonRow>
-
-                                        <IonRow className='btn-send'>
-                                            <button className='btns-send'>
-                                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M28.9661 15.8972C29.8506 16.3395 29.8506 17.6016 28.9661 18.0439L14.6639 25.195C13.7351 25.6594 12.6948 24.8048 12.9702 23.8035L14.6305 17.766C14.7737 17.2453 14.7737 16.6957 14.6305 16.175L12.9702 10.1376C12.6948 9.13633 13.7351 8.2817 14.6639 8.74612L28.9661 15.8972Z" stroke="#2B3F6C" stroke-width="1.5" />
-                                                    <path d="M18.0817 16.9705L15.2533 16.9705" stroke="#2B3F6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </button>
-                                        </IonRow>
-                                    </div>
+                                    <IonFooter className="ion-no-border">
+                                        <IonToolbar>
+                                            <div className="box_input-send">
+                                                <IonRow className="btn-send">
+                                                    <button className="btns-send">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M20 5H16.83L15 3H9L7.17 5H4C2.9 5 2 5.9 2 7V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V7C22 5.9 21.1 5 20 5ZM20 19H4V7H8.05L9.88 5H14.12L15.95 7H20V19ZM12 8C9.24 8 7 10.24 7 13C7 15.76 9.24 18 12 18C14.76 18 17 15.76 17 13C17 10.24 14.76 8 12 8ZM12 16C10.35 16 9 14.65 9 13C9 11.35 10.35 10 12 10C13.65 10 15 11.35 15 13C15 14.65 13.65 16 12 16Z"
+                                                                fill="black"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </IonRow>
+                                                <IonRow className="input-send">
+                                                    <IonInput placeholder="Ask something" className="inputText-handle" />
+                                                </IonRow>
+                                                <IonRow className="btn-send">
+                                                    <button className="btns-send">
+                                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                            <path
+                                                                d="M28.9661 15.8972C29.8506 16.3395 29.8506 17.6016 28.9661 18.0439L14.6639 25.195C13.7351 25.6594 12.6948 24.8048 12.9702 23.8035L14.6305 17.766C14.7737 17.2453 14.7737 16.6957 14.6305 16.175L12.9702 10.1376C12.6948 9.13633 13.7351 8.2817 14.6639 8.74612L28.9661 15.8972Z"
+                                                                stroke="#2B3F6C"
+                                                                strokeWidth="1.5"
+                                                            />
+                                                            <path d="M18.0817 16.9705L15.2533 16.9705" stroke="#2B3F6C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </IonRow>
+                                            </div>
+                                        </IonToolbar>
+                                    </IonFooter>
                                 </div>
                             </div>
+
                         </IonCol>
                     </IonRow>
                 </IonGrid>
