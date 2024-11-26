@@ -118,8 +118,10 @@ const SliderComponent: React.FC<ContainerProgs> = ({ onFinish }) => {
                       <img src={slide.imageSldiers} alt={slide.title} />
                     </div>
                     <div className="sliderUnder">
-                      <h2>{slide.title}</h2>
-                      <p>{slide.subtitle}</p>
+                      <div>
+                        <h2>{slide.title}</h2>
+                        <p>{slide.subtitle}</p>
+                      </div>
                       <button
                         className="buttomfullsilder"
                         onClick={() => handleNextSlide(slide.type)}
