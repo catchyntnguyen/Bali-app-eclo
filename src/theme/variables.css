@@ -550,6 +550,7 @@ ion-grid{
 	justify-content:center;
 	align-items:center;
 	padding:10px 10px;
+	color:white;
 }
 .IonContent{
 	min-height:100vh;
