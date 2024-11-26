@@ -1525,6 +1525,9 @@ ion-grid{
 		color:white;
 		outline: none;
 	  }
+	  .input-group input::placeholder {
+		color: white;
+	  }
 	  
 	  .forgot-password {
 		font-size: 12px;
