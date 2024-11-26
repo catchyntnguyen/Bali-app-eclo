@@ -657,6 +657,7 @@ ion-grid{
 	color:Black;
 }
 .cartNothing{
+	margin-top:50px;
 	height:324px;
 	width:100%;
 	border-top:1px solid black;
@@ -665,7 +666,6 @@ ion-grid{
 	text-align:center;
 }
 .cartNothing{
- margin-top:153px;
  display:flex;
  flex-direction:column;
  justify-content:space-between;
@@ -673,7 +673,7 @@ ion-grid{
  padding-top:100px;
 }
 .cartNothing-conent{
-	margin-top:80px;
+	/* margin-top:80px; */
 }
 .cartNothing-conent p{
 	margin:0;
