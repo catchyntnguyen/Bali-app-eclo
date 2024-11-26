@@ -20,6 +20,12 @@
     text-align: center;
     color:#7177AB;
   } 
+  .buttonSider{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
   .sliderUnder {
     padding: 10px;
     background: white;

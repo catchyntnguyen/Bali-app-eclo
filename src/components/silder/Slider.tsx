@@ -122,12 +122,14 @@ const SliderComponent: React.FC<ContainerProgs> = ({ onFinish }) => {
                         <h2>{slide.title}</h2>
                         <p>{slide.subtitle}</p>
                       </div>
-                      <button
-                        className="buttomfullsilder"
-                        onClick={() => handleNextSlide(slide.type)}
-                      >
-                        {slide.buttonText}
-                      </button>
+                      <div className='buttonSider'>
+                        <button
+                          className="buttomfullsilder"
+                          onClick={() => handleNextSlide(slide.type)}
+                        >
+                          {slide.buttonText}
+                        </button>
+                      </div>
                     </div>
                   </IonCol>
                 </IonRow>
