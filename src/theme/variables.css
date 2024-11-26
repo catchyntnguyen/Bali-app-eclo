@@ -1217,6 +1217,7 @@ ion-grid{
 		border-radius:5px;
 		margin:auto;
 		margin-top:50px;
+		color:white;
 	}
 	.bill-detailcar-first{
 		display:flex;
@@ -1517,6 +1518,7 @@ ion-grid{
 		border: 1px solid #ccc;
 		border-radius: 5px;
 		color: #000;
+		background:transparent;
 		background-image: url('/bg-blur.png');
 		background-repeat: no-repeat;
 		background-size: cover; 

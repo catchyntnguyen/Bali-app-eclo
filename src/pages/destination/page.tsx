@@ -60,7 +60,7 @@ const DestinationPage: React.FC = () => {
 
             </div>
             <div className="underMap">
-                <button onClick={handleNext} disabled={!destinationLocation}>Hoàn Tất</button>
+                <button onClick={handleNext} disabled={!destinationLocation}>Done</button>
             </div>
         </>
     );
